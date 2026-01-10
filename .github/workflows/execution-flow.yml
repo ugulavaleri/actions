@@ -80,5 +80,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Writing Report
-        run: echo ${{ toJson(github) }}
+        run: echo '${{ toJson(github) }}'
 
