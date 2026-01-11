@@ -73,6 +73,11 @@ jobs:
           name: dist-files
       - name: Output contents
         run: ls
+      - name: Set Output
+        id: output
+        run: echo "name=leri ugulava" >> "$GITHUB_OUTPUT"
+      - name: Display Output
+        run: echo ${{ steps.output.outputs.name }}
       - name: Deploy
         run: echo "Deploying..."
   report:
