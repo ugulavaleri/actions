@@ -5,8 +5,8 @@ on:
       - opened
 jobs:
   assign-label:
-    # permissions:
-    #   issues: write
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Assign label
@@ -20,3 +20,5 @@ jobs:
               "labels": ["bug"]
             }' \
           --fail
+      - name: tst
+        run: echo "krki"
