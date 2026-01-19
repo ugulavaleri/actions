@@ -20,3 +20,7 @@ jobs:
               "labels": ["bug"]
             }' \
           --fail
+      - name: tst
+        run: echo "krki"
+      - name: tst2
+        run: echo "krki2" 
